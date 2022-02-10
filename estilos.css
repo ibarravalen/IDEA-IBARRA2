@@ -55,6 +55,11 @@ span:hover {
     color: black;
 }
 
+.active {
+    background-color: white;
+    color: black;
+}
+
 .sub2 {
     font-family: 'Inconsolata', monospace;
     margin-top: 30px;
@@ -62,6 +67,19 @@ span:hover {
     text-align: center;
     padding: 0;
     font-size: 25px;
+    color: white;
+    background-color: black;
+}
+
+.sub21 {
+    font-family: 'Inconsolata', monospace;
+    margin-top: 50px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 0;
+    font-size: 25px;
+    color: white;
+    background-color: black;
 }
 
 .img1 {
@@ -104,6 +122,7 @@ footer {
 .foot {
     margin-top: 40px;
 }
+
 
 
 /* ANIMACIONES */
@@ -165,6 +184,7 @@ to {
     flex-flow: row, wrap;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .anuncioflex {
@@ -186,6 +206,20 @@ to {
     "footer footer footer";
     grid-template-columns: 100%;
     grid-template-rows:150px 50px 1700px 250px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+#gridAreas2 {
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "nav nav nav"
+    "galeria galeria galeria"
+    "publi publi publi"
+    "footer footer footer";
+    grid-template-columns: 100%;
+    grid-template-rows:150px 50px 3100px 250px 100px;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
 }
@@ -233,7 +267,80 @@ nav {
 
 /* Tablet */
 
+@media (min-width: 480px) and (max-width: 1023px) {
 
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "nav nav nav"
+        "galeria galeria galeria"
+        "publi publi publi"
+        "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows:200px 50px 1300px 150px 100px;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    
+    #gridAreas2 {
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "nav nav nav"
+        "galeria galeria galeria"
+        "publi publi publi"
+        "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows:200px 50px 2600px 140px 100px;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+
+    .img1 {
+        width: 300px;
+        margin: 50px;
+    }
+    
+    .titulo1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 50px;
+        margin: 0;
+        margin-top: 40px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+
+    .sub1 {
+        font-family: 'Inconsolata', monospace;
+        margin: 0;
+        font-size: 30px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -250,3 +357,57 @@ nav {
 
 
 /* Desktop */
+@media (min-width: 1024px) {
+
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "nav nav nav"
+        "galeria galeria galeria"
+        "publi publi publi"
+        "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows:200px 50px 1300px 150px 100px;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+    
+    #gridAreas2 {
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza cabeza"
+        "nav nav nav"
+        "galeria galeria galeria"
+        "publi publi publi"
+        "footer footer footer";
+        grid-template-columns: 100%;
+        grid-template-rows:200px 50px 1100px 120px 100px;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+    }
+
+    .titulo1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 80px;
+        margin: 0;
+        margin-top: 40px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+
+    .sub1 {
+        font-family: 'Inconsolata', monospace;
+        margin: 0;
+        font-size: 30px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+
+
+
+
+
+
+
+}
